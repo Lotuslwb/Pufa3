@@ -1,0 +1,132 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/idangerous.swiper.css" />
+    
+    <script src="js/dpi.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    
+</head>
+<body class="resultA-bg">
+<!-- 加载进度条 -->
+<div class="page-loading">
+  <ul class="border">
+    <li></li><li></li><li></li><li></li>
+  </ul>
+</div>
+
+<div class="f-hide">
+  <img src="img/resultA-bg.jpg">
+</div>
+
+<!-- container -->
+<div class="overlay"></div>
+<div class="pop-box a-result-pop-box" id="pop-none">
+  <img class="pop-close" src="img/icon-close.png">
+  <div class="title">
+    属于你的樱花树绘制成功！<br/>
+    快向好友炫耀一下吧！
+    <img class="btn1" src="img/btn-share.png">
+  </div>
+  
+  <div class="dec">
+    马上签约即有好礼拿~
+  </div>
+  
+  <div class="footer">
+    <img class="btn2" src="img/btn-kaitong.png">
+    签约成功后，发送通关密语“樱花”<br/>
+    至浦发银行微信，即刻领奖！
+  </div>
+</div>
+
+<div class="pop-box a-result-pop-box" id="pop-done">
+  <img class="pop-close" src="img/icon-close.png">
+  <div class="title">
+    属于你的樱花树绘制成功！<br/>
+    快向好友炫耀一下吧！
+  </div>
+  
+  <div class="dec">
+    快叫上你的小伙伴们一起来吧！
+  </div>
+  
+  <div class="footer">
+    <img class="btn1" src="img/btn-share.png">
+    签约成功后，发送通关密语“樱花”<br/>
+    至浦发银行微信，即刻领奖！
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="a-result-box">
+    <img class="a-result-boxBg" src="img/resultA-box.jpg">
+    <img class="a-result-boxImg" src="img/qian-aiqing.png">
+  </div>
+  <img class="logo" src="img/logo.png">
+  <a class="a-link" href="#"><img src="img/a-link.png"></a>
+  <div class="btn-list">
+    <img class="btn" id="btn-none" src="img/btn-None.png">
+    <img class="btn" id="btn-done" src="img/btn-done.png">
+  </div>
+</div>
+<!-- /container -->
+<script>
+  $(function(){
+        if ($('body img').length === 0) {
+            show_page();
+        } else {
+            $('body img').imagesLoaded().progress(function(instance, image) {
+                show_page();
+            });
+        }
+        
+        function show_page() {
+            $(".page-loading").fadeOut();
+        }
+        
+        $("#btn-done").click(function(){
+          $("#pop-done").show();
+          $('.overlay').show();
+        });
+        
+        $("#btn-none").click(function(){
+          $('#pop-none').show();
+          $('.overlay').show();
+        });
+        
+        $(".pop-close").click(function(){
+          $(this).parent().hide();
+          $('.overlay').hide();
+        })
+  });
+</script>
+<script>
+    //定义服务器图片目录路径
+    var imageUrl = '';   
+    //定义分享的缩略图的地址
+    var img_url = '';
+    //定义分享的链接
+    var lineLink = '';
+    //定义分享的内容
+    var descContent = '';
+    //定义分享的标题
+    var shareTitle = '';
+    //定义分享的app id (可选)
+    var appid = '';
+</script>
+</body>
+</html>

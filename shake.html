@@ -1,0 +1,133 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/idangerous.swiper.css" />
+    
+    <script src="js/dpi.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    
+</head>
+<body class="shake-bg">
+<!-- 加载进度条 -->
+<div class="page-loading">
+  <ul class="border">
+    <li></li><li></li><li></li><li></li>
+  </ul>
+</div>
+
+<div class="f-hide">
+  <img src="img/shake-bg.jpg">
+  <img src="img/fall.gif">
+</div>
+<!-- container -->
+<div class="overlay"></div>
+<div class="pop-box a-result-pop-box" id="pop-none">
+  <img class="pop-close" src="img/icon-close.png">
+  <div class="title">
+    属于你的樱花树绘制成功！<br/>
+    快向好友炫耀一下吧！
+    <img class="btn1" src="img/btn-share.png">
+  </div>
+  
+  <div class="dec">
+    马上签约即有好礼拿~
+  </div>
+  
+  <div class="footer">
+    <img class="btn2" src="img/btn-kaitong.png">
+    签约成功后，发送通关密语“樱花”<br/>
+    至浦发银行微信，即刻领奖！
+  </div>
+</div>
+
+<div class="rule-pop pop-box">
+  <img class="pop-close" src="img/icon-close.png">
+</div>
+
+
+<div class="container">
+  <img class="logo" src="img/logo.png">
+  <div class="shake-header">
+    <img class="shake-text" src="img/shake-text.png">
+    <img class="rule" src="img/btn-rule.png">
+  </div>
+  <img class="shake-img" src="img/shake-img.png">
+</div>
+<!-- /container -->
+<script src="js/shake.js"></script>
+<script>
+  $(function(){
+    musiceInt();
+    
+        if ($('body img').length === 0) {
+            show_page();
+        } else {
+            $('body img').imagesLoaded().progress(function(instance, image) {
+                show_page();
+            });
+        }
+        
+        function show_page() {
+            $(".page-loading").fadeOut();
+            shake();
+        }
+        
+        $("#btn-done").click(function(){
+          $("#pop-done").show();
+          $('.overlay').show();
+        });
+        
+        $("#btn-none").click(function(){
+          $('#pop-none').show();
+          $('.overlay').show();
+        });
+        
+        $(".pop-close").click(function(){
+          $(this).parent().hide();
+          $('.overlay').hide();
+        })
+  });
+</script>
+<script>
+  $(function(){
+    $(".rule").click(function(){
+      $('.overlay').show();
+      $(".rule-pop").show();
+    });
+    
+    $(".pop-close").click(function(){
+      $(".overlay").hide();
+      $(this).parent().hide();
+    });
+    
+  });
+</script>
+
+<script>
+    //定义服务器图片目录路径
+    var imageUrl = '';   
+    //定义分享的缩略图的地址
+    var img_url = '';
+    //定义分享的链接
+    var lineLink = '';
+    //定义分享的内容
+    var descContent = '';
+    //定义分享的标题
+    var shareTitle = '';
+    //定义分享的app id (可选)
+    var appid = '';
+</script>
+</body>
+</html>
