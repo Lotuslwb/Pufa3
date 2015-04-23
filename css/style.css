@@ -45,7 +45,7 @@
 .resultA-bg .btn-list .btn{ margin: 20px auto 0;}
 .a-result-box{ position: absolute; z-index: 2; right: 30px; top: 0;}
 .a-result-boxImg{ position: absolute; z-index: 2; right: 35px; top: 0;}
-.resultA-bg .a-result-pop-box{
+.a-result-pop-box{
   width: 480px;
   height: 581px;
   background: url(../img/resultA-pop-bg.jpg) no-repeat;
@@ -98,7 +98,65 @@
   display: inline;
 }
 .shake-bg .shake-img{ margin:10px auto 0; }
+.btn-rule,.btn-jiangping{ position: absolute; left: 0; bottom: 240px;}
+.btn-jiangping{ bottom: 100px;}
+.pop-titleText{ margin: auto; padding-top: 30px;}
+.pop-info{ padding:15px 40px 40px 40px; min-height: 140px; box-sizing: border-box; font-size: 22px; color: #dd2e59; line-height: 26px;}
+.pop-content{
+  padding: 0 30px; width: 100%; height: 580px; box-sizing: border-box; font-size: 30px; text-align: center;
+  position: relative;
+}
+.pop-content .title{ color: #003473; padding-top: 25px;}
+.pop-content .text{ color:#dd2e59; margin-top: 5px;}
+.pop-content .popimg{ margin: 20px auto 0;}
+.pop-content .copyright{ font-size: 18px; color: #555; margin-top: 5px;}
+.pop-content .footer1{ font-size: 24px; color: #555; margin: 5px auto;}
+.pop-content .btn{ position: absolute; bottom: 40px; left: 50%; width: 170px; margin-left: -85px;}
+.pop-box .footer{ 
+  position: absolute; bottom: 20px; width: 100%; text-align: center;
+  font-size: 18px; color: #555; margin-top: 5px;
+  }
+.pop-form{ width: 400px; margin: auto;}
+.input-row{ margin-top: 15px;}
+.input-text{color: rgb(0, 52, 115); font-size: 24px; display: inline-block; width: 125px; text-align: center;}
+.input{ 
+  display: inline-block;   width: 263px; height: 55px; line-height: 55px; background-color: rgba(233, 233, 233,0.3);
+  border-radius: 10px; border: 2px solid rgb(221, 46, 89); box-sizing: border-box; font-size: 24px;
+}
+.pop-submit{
+  margin: 25px auto;
+  width: 170px;
+  display: block;
+}
 
+.b-result-pop-box{
+  width: 480px;
+  height: 361px;
+  background: url(../img/resultB-pop-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.tijiaochenggong{
+  padding-top: 120px;
+  font-size: 48px;
+  color: rgb(0, 52, 115);
+  line-height: 0.75;
+  text-align: center;
+}
+.haimeicanyu{
+  padding-top: 120px;
+  font-size: 32px;
+  color: rgb(0, 52, 115);
+  line-height: 1.36;
+  text-align: center;
+}
+.zhongjiang1{ padding-top: 60px; font-size: 56px;}
+.zhongjiang2{font-size: 44px;}
+.zhongjiang{
+  color: rgb(0, 52, 115);
+  line-height: 1.36;
+  text-align: center;  
+}
+.btn-share{ margin: 50px auto 0;}
 /*动画*/
 .swiper-slide-active .arrowbox{
     -webkit-animation: bounce 2s infinite both;

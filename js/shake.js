@@ -50,7 +50,9 @@ function shakedCallBack(){
   $fall.appendTo($('body'));
   setTimeout(function(){
     $fall.remove();
-  },4000)
+    _showpop();
+  },1000)
+  
 }
 
 function musiceInt(){
@@ -62,6 +64,11 @@ function musiceInt(){
       audioElement2.pause();
     })
 
+}
+
+function _showpop(){
+  $(".overlay").show();
+  $("#shaked-show").show();
 }
 
 var audioElement2

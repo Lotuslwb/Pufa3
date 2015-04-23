@@ -29,41 +29,98 @@
 
 <div class="f-hide">
   <img src="img/shake-bg.jpg">
+  <img src="img/resultA-pop-bg.jpg">
+  <img src="img/resultB-pop-bg.jpg">
   <img src="img/fall.gif">
 </div>
 <!-- container -->
 <div class="overlay"></div>
-<div class="pop-box a-result-pop-box" id="pop-none">
-  <img class="pop-close" src="img/icon-close.png">
-  <div class="title">
-    属于你的樱花树绘制成功！<br/>
-    快向好友炫耀一下吧！
-    <img class="btn1" src="img/btn-share.png">
-  </div>
-  
-  <div class="dec">
-    马上签约即有好礼拿~
-  </div>
-  
-  <div class="footer">
-    <img class="btn2" src="img/btn-kaitong.png">
-    签约成功后，发送通关密语“樱花”<br/>
-    至浦发银行微信，即刻领奖！
-  </div>
-</div>
 
+<!--活动规则-->
 <div class="rule-pop pop-box">
   <img class="pop-close" src="img/icon-close.png">
 </div>
+<!--中奖  带激活码-->
+<!-- 摇一摇之后 需要显示的弹窗  加id = shaked-show-->
+<div class="pop-box a-result-pop-box" id="shaked-show">
+  <div class="pop-content">
+    <div class="title">恭喜你获得了</div>
+    <div class="text">蜘蛛精全年畅读电子券</div>
+    <img class="popimg" src="img/popimg-lvyou.png">
+    <div class="copyright">*奖品以实物为准</div>
+    <div class="title">激活码：xxxxxxxxxxxx</div>
+    <div class="footer1">长按代码复制</div>
+    <div class="copyright footer">*具体领奖或兑换方式请查看首页《活动规则》</div>
+  </div>
+</div>
 
+<!--中奖 带领奖按钮-->
+<div class="pop-box a-result-pop-box">
+  <div class="pop-content">
+    <div class="title">恭喜你获得了</div>
+    <div class="text">蜘蛛精全年畅读电子券</div>
+    <img class="popimg" src="img/popimg-zhizhujing.png">
+    <div class="copyright">*奖品以实物为准</div>
+    <img class="btn" src="img/btn-lingjiang.png">
+    <div class="copyright footer">*具体领奖或兑换方式请查看首页《活动规则》</div>
+  </div>
+</div>
+
+<!--填写信息-->
+<div class="pop-box a-result-pop-box">
+  <img class="pop-close" src="img/icon-close.png">
+  <img class="pop-titleText" src="img/pop-titleText.png">
+  <div class="pop-info">
+  </div>
+    为确保刷卡金到账，请填写您的手机银行签约手机号，并确认您已在浦发微信银行中绑定默认银行卡（您可在微信银行中回复“默认卡”，根据提示进行设置）
+  <form class="pop-form">
+    <div class="input-row">
+      <span class="input-text">姓  名：</span>
+      <input type="text" class="input" />
+    </div>
+   <div class="input-row">
+      <span class="input-text">手机号：</span>
+      <input type="tel" class="input" />
+    </div>
+    <a class="pop-submit" href="#"><img  src="img/btn-submit.png"></a>
+    <div class="footer">
+      感谢您的参与，请留意查收您的获奖信息。
+    </div>
+  </form>
+</div>
+
+<!--提交成功-->
+<div class="pop-box b-result-pop-box">
+  <img class="pop-close" src="img/icon-close.png">
+  <div class="tijiaochenggong">提交成功</div>
+  <img class="btn-share" src="img/btn-share.png">
+</div>
+
+<!--还未参与-->
+<div class="pop-box b-result-pop-box">
+  <img class="pop-close" src="img/icon-close.png">
+  <div class="haimeicanyu">您还未参与活动，赶快摇一摇，<br/>丰富好礼等你来赢！
+</div>
+  <img class="btn-share" src="img/btn-like.png">
+</div>
+
+<!--您已中奖-->
+<div class="pop-box b-result-pop-box">
+  <img class="pop-close" src="img/icon-close.png">
+  <div class="zhongjiang zhongjiang1">您已中奖，</div>
+  <div class="zhongjiang zhongjiang2">感谢您的参与！</div>
+  <img class="btn-share" src="img/btn-like.png">
+</div>
 
 <div class="container">
   <img class="logo" src="img/logo.png">
   <div class="shake-header">
     <img class="shake-text" src="img/shake-text.png">
-    <img class="rule" src="img/btn-rule.png">
   </div>
   <img class="shake-img" src="img/shake-img.png">
+  
+  <img class="btn-rule rule" src="img/btn-float-rule.png">
+  <a class="btn-jiangping" href="#"><img src="img/btn-float-jiangping.png"></a>
 </div>
 <!-- /container -->
 <script src="js/shake.js"></script>
