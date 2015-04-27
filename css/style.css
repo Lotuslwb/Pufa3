@@ -88,6 +88,8 @@
    width: 580px; height: 921px; 
    background: url(../img/rule-bg.png) no-repeat; background-size: contain;
 }
+.rule-pop-content{ height: 100%; width: 100%; overflow: auto;}
+.rule-pop-content img{ margin: auto;}
 
 /*shake.html*/
 .shake-bg{ background: url('../img/shake-bg.jpg'); background-size:cover; background-position: center;}
