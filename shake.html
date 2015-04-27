@@ -128,11 +128,16 @@
   $(function(){
     musiceInt();
     
+        var loaded = 0;
         if ($('body img').length === 0) {
             show_page();
         } else {
             $('body img').imagesLoaded().progress(function(instance, image) {
+              loaded++;
+              if (loaded == instance.images.length) {
                 show_page();
+                setTimeout(showGif,1000)
+              }
             });
         }
         
