@@ -88,6 +88,8 @@
   text-align: center;
 }
 
+.share-pop{ position: absolute; z-index: 100; top: 25px; right: 25px; display: none;}
+
 /*rule pop*/
 .rule-pop{
    width: 580px; height: 921px; 
