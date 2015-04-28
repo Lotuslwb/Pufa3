@@ -32,8 +32,9 @@
 .imglist img{ margin: auto;}
 .page2-yezi{ position: absolute; right: 0; top: 520px; z-index: 10;}
 .page3-yezi{ position: absolute; right: 0; top: 250px; z-index: 10;}
-
-
+.page3-box{ position: relative; }
+.page4-start,.page4-end{ position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%);}
+.page4-end{ display: none;}
 /*page4*/
 .bg4{ background: url('../img/page4-bg.jpg'); background-size:cover; background-position: center;}
 .imglist2{ margin:150px auto 0;}

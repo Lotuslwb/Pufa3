@@ -8,7 +8,12 @@ $(function(){
         });
         
         $('#zhiwen').click(function(){
-          window.location.href="A-result.html";
+          $(".page4-start").fadeOut();
+          $('.page4-end').fadeIn();
+          setTimeout(function(){
+            window.location.href="A-result.html";
+          },1000);
+          
         })
         
         $('.arrowbox').click(function(){
