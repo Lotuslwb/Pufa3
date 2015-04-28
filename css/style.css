@@ -9,6 +9,7 @@
 .fall{
   width: 100%;
   position: absolute; z-index: 12; top: 0; opacity: 0.8;
+  pointer-events: none;
 }
 /*swiper*/
 .container,.swiper-container{ height: 100%; padding:0; }
@@ -29,6 +30,9 @@
 .bg2,.bg3{ background: url('../img/page2-bg.jpg'); background-size:cover; background-position: center;}
 .imglist{ margin:65px auto 0;}
 .imglist img{ margin: auto;}
+.page2-yezi{ position: absolute; right: 0; top: 520px; z-index: 10;}
+.page3-yezi{ position: absolute; right: 0; top: 250px; z-index: 10;}
+
 
 /*page4*/
 .bg4{ background: url('../img/page4-bg.jpg'); background-size:cover; background-position: center;}
@@ -175,8 +179,12 @@
 .swiper-slide-active .imglist img:nth-of-type(3){
   -webkit-animation: fadeInLeft 1s 2s both;
 }
-
-
+.swiper-slide-active .page2-yezi{
+  -webkit-animation: fadeIn 2s 3s both;
+}
+.swiper-slide-active .page3-yezi{
+  -webkit-animation: fadeIn 2s 2s both;
+}
 /*loading*/
 .page-loading{position:absolute;top:0;right:0;bottom:0;left:0;z-index:999;background:#fff}
 .page-loading .border{position:relative;margin:60% auto auto auto;width:50px;height:50px;border-radius:50%;list-style:none;font-size:100px}

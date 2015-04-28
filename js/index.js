@@ -34,10 +34,7 @@ $(function(){
 
     function showGif(){
       var $fall=$('<img src="img/fall.gif" class="fall">');
-      $fall.appendTo($('body'));
-      setTimeout(function(){
-        $fall.remove();
-      },4000)
+      $fall.appendTo($('.bg1'));
     }
 })
 
