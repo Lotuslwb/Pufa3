@@ -38,9 +38,7 @@ $(function(){
         }
 
     function showGif(){
-      var $fall=$('<img src="img/fall.gif" class="fall">');
-      $fall.appendTo($('.bg1'));
+      init();
     }
-})
 
-
+});

@@ -122,7 +122,13 @@
   <img class="btn-rule rule" src="img/btn-float-rule.png">
   <a class="btn-jiangping" href="#"><img src="img/btn-float-jiangping.png"></a>
 </div>
+<canvas id="canvas" class="fall" width="640" height="1136"></canvas>
 <!-- /container -->
+<script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
+<script src="js/DEMO.js"></script>
 <script src="js/shake.js"></script>
 <script>
   $(function(){
@@ -136,7 +142,6 @@
               loaded++;
               if (loaded == instance.images.length) {
                 show_page();
-                setTimeout(showGif,1000)
               }
             });
         }

@@ -45,11 +45,9 @@ function shake(){
 
 function shakedCallBack(){
   audioElement2.play();
-  var $fall=$('<img src="img/fall.gif" class="fall">');
   $(".shake-img").fadeOut();
-  $fall.appendTo($('body'));
+  init();
   setTimeout(function(){
-    $fall.remove();
     _showpop();
   },1000)
   
