@@ -1,3 +1,5 @@
+var once=false;
+
 function shake(){
     if (window.DeviceMotionEvent) {
       window.addEventListener('devicemotion', deviceMotionHandler, false);
@@ -43,8 +45,12 @@ function shake(){
     }     
     }
 
+
 function shakedCallBack(){
-  audioElement2.play();
+  if(!once){
+    audioElement2.play();
+    once=true;
+  }
   $(".shake-img").fadeOut();
   init();
   setTimeout(function(){
